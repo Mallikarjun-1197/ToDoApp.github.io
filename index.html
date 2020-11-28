@@ -1,0 +1,37 @@
+<!DOCType html>
+<html>
+	<head>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	<body id="to-do-app">
+		<div class="To-do-container">
+		
+		<div class="topbanner-container">
+			<h1 style="font-size:80px;opacity:0.5;">to-do's</h1>
+		</div>
+		<div id="banner-container" style="margin-left:160px;">
+			<img class ="to-do-thumbnail" src='./images/todoo.png'/>
+			<h2 id='intro-note' style="margin:0px;">Add your first to do here!</h2>
+		</div>
+		<form>
+			<div style="display:flex;border-radius: 4px;">
+				<input type="text" id="input-do-data" placeholder="Add ToDo.."/>
+				<select id="imortance" name="imortance">
+					<option value="volvo">High</option>
+					<option value="saab">Low</option>
+					<option value="fiat">Medium</option>
+				  </select>
+				<button class="add-to-do-btn"type="button" onClick="addNewToDo()"><i class="fas fa-lg fa-plus-circle"></i></button>
+			</div>
+		</form>
+			<ul id="notes" style="list-style-type:none;">
+				<li class="dummy-item"></li>
+				<li class="dummy-item"></li>
+			</ul>
+		</div>
+	</body>
+	<script src="ToDo.js"></script>
+</html>

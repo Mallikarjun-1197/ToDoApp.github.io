@@ -1,0 +1,145 @@
+.to-do-item{
+	display:flex;
+	height:50px;
+	margin-bottom : 0.5rem;
+	border-radius : 40px;
+}
+body{
+	background: #f7dbda;
+}
+
+.to-do-thumbnail{
+	position:relative;
+	left:100px;
+	width : 100px;
+	height: 100px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+select{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.add-to-do-btn{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.To-Do-form{
+	margin:auto auto;
+	border-radius : 5%;
+	width : 500px;
+}
+.add-cancel-btns{
+	display:flex;
+	width : 100%;
+	justify-content: space-around;
+}
+.add-btn,.cancel-btn{
+  width : 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.topbanner-container{
+	position:relative;
+	left:200px;
+}
+
+.notes-container{
+	margin: auto auto;
+	margin-top : 100px;
+	height : 400px;
+	width : 400px;
+	border : 1px solid black;
+}
+#container{
+	visibility:hidden;
+	margin:auto;
+	border-radius: 5px;
+	width : 700px;
+	height : 200px;
+	background-color: #f2f2f2;
+}
+
+.To-do-container{
+	margin:0 auto;
+	border-radius: 5px;
+	width:100%;
+	padding-left : 10px;
+	padding-right : 10px;
+	margin-top: 5vh;
+	margin-bottom : 5vh;
+	max-width : 700px;
+	height : 90vh;
+}
+
+.dummy-item{
+	width:500px;
+	height:50px;
+	background: linear-gradient(100deg, #eceff1 30%, #f6f7f8 50%, #eceff1 70%);
+	margin-bottom : 0.5rem;
+}
+
+.to-do{
+	width:500px;
+	padding-top : 1rem;
+	border : 1px solid black;
+	border-radius : 4px;
+	text-align : center;
+}
+.trash{
+	animation : trashit linear 0.5s ;
+}
+
+@keyframes trashit{
+	0%{
+		left: -100px;
+	}
+	50%{
+		left: 0px;
+		
+	}
+	100%{
+		left : 150px;
+	}
+}
+.completed-btn,.trash-btn{
+	width : 50px;
+}
+.fa-check,
+.fa-trash{
+	pointer-events:none;
+}
+@keyframes loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes popup{
+	0%{margin-top : -300px;}
+	50%{margin-top : 100px}
+	70%{margin-top : 80px}
+	100%{margin-top : 20px}
+}
